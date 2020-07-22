@@ -1,3 +1,1 @@
-import time
-
-time.sleep(10000000)
+print("Hello Docker!")
