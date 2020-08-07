@@ -1,0 +1,24 @@
+#!/bin/bash
+echo "What is the name of the repo?"
+read new_name
+#echo "Press 'Enter' when you have created a git-repo called $new_name"
+#read
+
+#Clone utils
+git submodule add git@github.com:JakobHenning/Utils.git
+
+#Get new git url
+git_url="git@github.com:JakobHenning/$new_name.git"
+
+#Set new git branch
+git remote set-url origin $git_url
+
+
+#Create new folder
+cp -r ../Create_python_project ../$new_name
+
+
+
+
+
+
